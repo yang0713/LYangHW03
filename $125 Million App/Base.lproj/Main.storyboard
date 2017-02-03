@@ -1,26 +1,93 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11762" systemVersion="16E144f" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="_125_Million_App" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wrb-DN-GDT">
+                                <rect key="frame" x="16" y="150.5" width="288" height="22"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="22" id="OuD-gO-WWF"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6hT-RO-aY2">
+                                <rect key="frame" x="110" y="112.5" width="101" height="30"/>
+                                <state key="normal" title="Convert"/>
+                                <connections>
+                                    <action selector="convertButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ViZ-so-y9i"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="enter miles" textAlignment="right" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="CZc-rJ-dg9">
+                                <rect key="frame" x="46" y="60.5" width="145" height="30"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="decimalPad"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="mile(s)" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="97f-kr-IBb">
+                                <rect key="frame" x="215" y="62.5" width="68" height="26"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="68" id="L9i-vN-ffx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="The $125 Million App" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="b1C-ZV-9NS">
+                                <rect key="frame" x="37" y="20" width="246" height="20.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80000001190000003" green="0.80000001190000003" blue="0.80000001190000003" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstItem="6hT-RO-aY2" firstAttribute="centerX" secondItem="wrb-DN-GDT" secondAttribute="centerX" id="1eG-6g-DHZ"/>
+                            <constraint firstItem="wrb-DN-GDT" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="1yQ-9V-FTM"/>
+                            <constraint firstItem="6hT-RO-aY2" firstAttribute="top" secondItem="CZc-rJ-dg9" secondAttribute="bottom" constant="22" id="1yX-8Q-Px9"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" relation="greaterThanOrEqual" secondItem="wrb-DN-GDT" secondAttribute="top" constant="385" id="6re-iu-Vub"/>
+                            <constraint firstItem="wrb-DN-GDT" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="7Cl-io-w3b"/>
+                            <constraint firstItem="CZc-rJ-dg9" firstAttribute="centerY" secondItem="97f-kr-IBb" secondAttribute="centerY" id="Hkk-Q5-9Eb"/>
+                            <constraint firstItem="b1C-ZV-9NS" firstAttribute="trailing" secondItem="97f-kr-IBb" secondAttribute="trailing" id="KdW-ex-hi2"/>
+                            <constraint firstItem="b1C-ZV-9NS" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" id="NUf-W1-ZGd"/>
+                            <constraint firstItem="b1C-ZV-9NS" firstAttribute="centerX" secondItem="6hT-RO-aY2" secondAttribute="centerX" id="Ogv-mA-Ugd"/>
+                            <constraint firstItem="6hT-RO-aY2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="94" id="Qnu-uT-cNu"/>
+                            <constraint firstItem="wrb-DN-GDT" firstAttribute="top" secondItem="97f-kr-IBb" secondAttribute="bottom" constant="62" id="TvP-VY-YKV"/>
+                            <constraint firstItem="wrb-DN-GDT" firstAttribute="top" secondItem="6hT-RO-aY2" secondAttribute="bottom" constant="8" symbolic="YES" id="b0i-T2-i41"/>
+                            <constraint firstItem="b1C-ZV-9NS" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="21" id="lCa-jj-r1A"/>
+                            <constraint firstItem="CZc-rJ-dg9" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="30" id="qc7-Y2-y6m"/>
+                            <constraint firstItem="97f-kr-IBb" firstAttribute="leading" secondItem="CZc-rJ-dg9" secondAttribute="trailing" constant="24" id="txD-MB-2Lu"/>
+                            <constraint firstItem="CZc-rJ-dg9" firstAttribute="top" secondItem="b1C-ZV-9NS" secondAttribute="bottom" constant="20" id="ytz-o1-6hf"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="resultsLabel" destination="wrb-DN-GDT" id="tFR-8T-edh"/>
+                        <outlet property="userInput" destination="CZc-rJ-dg9" id="HPy-eT-kkz"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-80.625" y="137.32394366197184"/>
         </scene>
     </scenes>
 </document>
